@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GoT-rF-uvZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Line View Controller-->
+        <scene sceneID="bHM-hd-IRi">
+            <objects>
+                <viewController id="GoT-rF-uvZ" customClass="LineViewController" customModule="ApplicationCordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0uI-Dc-rB7"/>
+                        <viewControllerLayoutGuide type="bottom" id="F2p-H0-iRJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oGV-zM-WmU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qb6-rL-cs3">
+                                <rect key="frame" x="210" y="295" width="180" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="8aY-2O-2Ku"/>
+                                    <constraint firstAttribute="width" constant="180" id="bzd-bX-kjm"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9a-fK-Nhn">
+                                <rect key="frame" x="273" y="325" width="54" height="30"/>
+                                <state key="normal" title="Dismiss"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="GoT-rF-uvZ" eventType="touchUpInside" id="Buy-ZI-sFp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qb6-rL-cs3" firstAttribute="centerY" secondItem="oGV-zM-WmU" secondAttribute="centerY" id="5Ys-cG-g6a"/>
+                            <constraint firstItem="Qb6-rL-cs3" firstAttribute="centerX" secondItem="oGV-zM-WmU" secondAttribute="centerX" id="Iai-bX-bqF"/>
+                            <constraint firstItem="A9a-fK-Nhn" firstAttribute="centerX" secondItem="oGV-zM-WmU" secondAttribute="centerX" id="Z8H-BB-NQE"/>
+                            <constraint firstItem="A9a-fK-Nhn" firstAttribute="centerY" secondItem="oGV-zM-WmU" secondAttribute="centerY" constant="40" id="orU-9r-HGR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lineView" destination="Qb6-rL-cs3" id="yNq-uM-QAN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vc3-fN-69Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="712"/>
+        </scene>
+    </scenes>
+</document>

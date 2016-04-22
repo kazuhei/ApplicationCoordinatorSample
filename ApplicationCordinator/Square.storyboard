@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1X3-DO-JSX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Square View Controller-->
+        <scene sceneID="cxC-x1-XS2">
+            <objects>
+                <viewController id="1X3-DO-JSX" customClass="SquareViewController" customModule="ApplicationCordinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uw7-l1-A3V"/>
+                        <viewControllerLayoutGuide type="bottom" id="dcw-cW-dvG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4z7-Ya-RmG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zey-iz-kJR">
+                                <rect key="frame" x="279" y="170" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THu-Zm-hdn">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3UC-mo-OqK"/>
+                                    <constraint firstAttribute="width" constant="100" id="dOe-gp-4gI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6W-Qy-dfO">
+                                <rect key="frame" x="285" y="385" width="31" height="30"/>
+                                <state key="normal" title="Blue"/>
+                                <connections>
+                                    <action selector="blueButton:" destination="1X3-DO-JSX" eventType="touchUpInside" id="8Gi-ra-5qh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7T-sB-O5C">
+                                <rect key="frame" x="385" y="385" width="30" height="30"/>
+                                <state key="normal" title="Red"/>
+                                <connections>
+                                    <action selector="redButton:" destination="1X3-DO-JSX" eventType="touchUpInside" id="fh0-2N-AgE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVY-78-8jX">
+                                <rect key="frame" x="160" y="385" width="44" height="30"/>
+                                <state key="normal" title="Yellow"/>
+                                <connections>
+                                    <action selector="yellowButton:" destination="1X3-DO-JSX" eventType="touchUpInside" id="qok-Sh-g8p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zz-G1-S0T">
+                                <rect key="frame" x="280" y="425" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="homeButton:" destination="1X3-DO-JSX" eventType="touchUpInside" id="2l3-Qy-Mbm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXN-Ft-CjV">
+                                <rect key="frame" x="162" y="425" width="40" height="30"/>
+                                <state key="normal" title="Circle"/>
+                                <connections>
+                                    <action selector="circleButton:" destination="1X3-DO-JSX" eventType="touchUpInside" id="MIg-Af-2aG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jXN-Ft-CjV" firstAttribute="centerY" secondItem="6zz-G1-S0T" secondAttribute="centerY" id="0vu-w8-hwE"/>
+                            <constraint firstItem="NVY-78-8jX" firstAttribute="top" secondItem="C6W-Qy-dfO" secondAttribute="top" id="8QK-pR-kug"/>
+                            <constraint firstItem="jXN-Ft-CjV" firstAttribute="centerX" secondItem="NVY-78-8jX" secondAttribute="centerX" id="8po-fT-YTz"/>
+                            <constraint firstItem="THu-Zm-hdn" firstAttribute="centerY" secondItem="4z7-Ya-RmG" secondAttribute="centerY" id="8tS-jY-tQm"/>
+                            <constraint firstItem="C6W-Qy-dfO" firstAttribute="centerY" secondItem="4z7-Ya-RmG" secondAttribute="centerY" constant="100" id="FtI-nS-wvD"/>
+                            <constraint firstItem="u7T-sB-O5C" firstAttribute="leading" secondItem="C6W-Qy-dfO" secondAttribute="trailing" constant="69" id="Hi1-hY-xXQ"/>
+                            <constraint firstItem="6zz-G1-S0T" firstAttribute="centerX" secondItem="4z7-Ya-RmG" secondAttribute="centerX" id="NP0-mA-bxy"/>
+                            <constraint firstItem="C6W-Qy-dfO" firstAttribute="leading" secondItem="NVY-78-8jX" secondAttribute="trailing" constant="81" id="Xxi-xJ-j3Z"/>
+                            <constraint firstItem="zey-iz-kJR" firstAttribute="centerX" secondItem="4z7-Ya-RmG" secondAttribute="centerX" id="aSD-ZA-VcQ"/>
+                            <constraint firstItem="zey-iz-kJR" firstAttribute="centerY" secondItem="4z7-Ya-RmG" secondAttribute="centerY" constant="-120" id="czv-mr-mmW"/>
+                            <constraint firstItem="THu-Zm-hdn" firstAttribute="centerX" secondItem="4z7-Ya-RmG" secondAttribute="centerX" id="e3I-hi-bv9"/>
+                            <constraint firstItem="C6W-Qy-dfO" firstAttribute="centerX" secondItem="4z7-Ya-RmG" secondAttribute="centerX" id="geo-e6-fcc"/>
+                            <constraint firstItem="6zz-G1-S0T" firstAttribute="centerY" secondItem="4z7-Ya-RmG" secondAttribute="centerY" constant="140" id="l1d-gI-9eP"/>
+                            <constraint firstItem="u7T-sB-O5C" firstAttribute="top" secondItem="C6W-Qy-dfO" secondAttribute="top" id="nIG-Is-ndc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorView" destination="THu-Zm-hdn" id="NIw-JE-JmP"/>
+                        <outlet property="label" destination="zey-iz-kJR" id="8be-bP-hiL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOc-f3-MiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="703"/>
+        </scene>
+    </scenes>
+</document>
