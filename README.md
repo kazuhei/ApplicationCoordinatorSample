@@ -1,0 +1,4 @@
+# ApplicationCoordinatorSample
+
+ApplicationCoordinatorを使って、VC間の遷移を一元管理するサンプルです。
+遷移は全てApplicationCoordinatorに委譲します。
